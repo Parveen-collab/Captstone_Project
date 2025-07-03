@@ -1,10 +1,46 @@
 {
 	"folders": [
 		{
+			"name": "Job Market Trend Project",
 			"path": "."
 		},
 		{
+			"name": "Data",
 			"path": "../../../Downloads/Data"
+		},
+		{
+			"name": "Backend_Developer",
+			"path": "../../../Downloads/Backend_Developer-20250701T161924Z-1-001/Backend_Developer"
+		},
+		{
+			"path": "../../../Downloads/Blockchain Developer-20250701T174708Z-1-001/Blockchain Developer"
+		},
+		{
+			"path": "../../../Downloads/business analst-20250701T175315Z-1-001/business analst"
+		},
+		{
+			"path": "../../../Downloads/data analyst html-20250701T175756Z-1-001/data analyst html"
+		},
+		{
+			"path": "../../../Downloads/data engineer-20250701T180242Z-1-001/data engineer"
+		},
+		{
+			"path": "../../../Downloads/frontend developer-20250701T180738Z-1-001/frontend developer"
+		},
+		{
+			"path": "../../../Downloads/Machine Learning Engineer-20250701T181147Z-1-001/Machine Learning Engineer"
+		},
+		{
+			"path": "../../../Downloads/Project Manager-20250701T181616Z-1-001/Project Manager"
+		},
+		{
+			"path": "../../../Downloads/Technical Recruiter-20250701T182016Z-1-001/Technical Recruiter"
+		},
+		{
+			"path": "../../../Downloads/UX Designer-20250701T182440Z-1-001/UX Designer"
+		},
+		{
+			"path": "../../../Downloads/web dev-20250701T182925Z-1-001/web dev"
 		}
 	],
 	"settings": {}

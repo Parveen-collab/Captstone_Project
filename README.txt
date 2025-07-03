@@ -1,3 +1,36 @@
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Backend_Developer-20250701T161924Z-1-001\Backend_Developer'
+OUTPUT_CSV = 'extracted_jobs2.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Blockchain Developer-20250701T174708Z-1-001\Blockchain Developer'
+OUTPUT_CSV = 'extracted_jobs3.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\business analst-20250701T175315Z-1-001\business analst'
+OUTPUT_CSV = 'extracted_jobs4.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\data analyst html-20250701T175756Z-1-001\data analyst html'
+OUTPUT_CSV = 'extracted_jobs5.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\data engineer-20250701T180242Z-1-001\data engineer'
+OUTPUT_CSV = 'extracted_jobs6.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\frontend developer-20250701T180738Z-1-001\frontend developer'
+OUTPUT_CSV = 'extracted_jobs7.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Machine Learning Engineer-20250701T181147Z-1-001\Machine Learning Engineer'
+OUTPUT_CSV = 'extracted_jobs8.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Project Manager-20250701T181616Z-1-001\Project Manager'
+OUTPUT_CSV = 'extracted_jobs9.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Technical Recruiter-20250701T182016Z-1-001\Technical Recruiter'
+OUTPUT_CSV = 'extracted_jobs10.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\UX Designer-20250701T182440Z-1-001\UX Designer'
+OUTPUT_CSV = 'extracted_jobs11.csv'
+
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\web dev-20250701T182925Z-1-001\web dev'
+OUTPUT_CSV = 'extracted_jobs12.csv'
+
 # Job Market Trend Analysis Project
 
 ## Project Overview

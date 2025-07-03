@@ -4,8 +4,8 @@ import csv
 import re
 from bs4 import BeautifulSoup
 
-HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Data\data scientist'
-OUTPUT_CSV = 'extracted_jobs.csv'
+HTML_DIR = r'C:\Users\Parveen kumar\Downloads\web dev-20250701T182925Z-1-001\web dev'
+OUTPUT_CSV = 'extracted_jobs12.csv'
 
 FIELDS = [
     'job_id',
