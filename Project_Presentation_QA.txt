@@ -1,0 +1,75 @@
+# Project Presentation Q&A
+
+## Possible Questions from Teachers
+
+### Technical Questions
+1. How does your web scraping script handle dynamic content and pagination on LinkedIn?
+2. Why did you choose Playwright over other automation tools like Selenium?
+3. How do you ensure your script does not get blocked by LinkedIn’s anti-bot measures?
+4. What challenges did you face while extracting structured data from HTML files?
+5. How do you handle missing or inconsistent data in your extraction process?
+6. Can your script be easily adapted to scrape other job roles or websites? How?
+7. What are the main fields you extract from each job posting, and why are they important?
+8. How do you ensure the accuracy and reliability of your extracted data?
+9. What libraries did you use for HTML parsing and why?
+10. How do you automate the process for multiple job roles?
+
+### Data & Visualization Questions
+1. How did you clean and preprocess the data before importing it into Power BI?
+2. What types of visualizations did you create in Power BI, and what insights do they provide?
+3. How do you handle duplicate job postings in your dataset?
+4. What trends did you observe in the job market for different IT roles?
+5. How would you update your dashboards if new data is collected?
+
+### General & Conceptual Questions
+1. What are the ethical considerations of web scraping from platforms like LinkedIn?
+2. How scalable is your solution for larger datasets or more frequent data collection?
+3. What improvements would you make if you had more time or resources?
+4. How can this project be useful for job seekers or recruiters?
+5. What are the limitations of your current approach?
+
+### Team & Process Questions
+1. How did you divide the work among team members?
+2. What was the most challenging part of the project for your team?
+3. How did you test and validate your scripts and dashboards?
+4. How would you document this project for someone else to use or extend?
+
+---
+
+## Model Answers (Based on Our Project)
+
+1. **How does your web scraping script handle dynamic content and pagination on LinkedIn?**
+   - Our script uses Playwright, which can interact with dynamic web pages just like a real user. For pagination, after scraping all jobs on the current page, we locate and click the “View next page” button using its aria-label. We repeat this process in a loop until the last page is reached, as detected by the button’s disabled state or an exception.
+
+2. **Why did you choose Playwright over other automation tools like Selenium?**
+   - Playwright is modern, supports multiple browsers, and handles dynamic content and JavaScript-heavy sites more reliably than Selenium. It also provides features like auto-waiting for elements and better support for headless and headed modes, which is useful for scraping LinkedIn.
+
+3. **How do you ensure your script does not get blocked by LinkedIn’s anti-bot measures?**
+   - We use slow motion (`slow_mo=50`) and run the browser in non-headless mode to mimic human behavior. We also add timeouts between actions. However, for production use, we would recommend rotating user agents, using proxies, and adding random delays to further reduce the risk of being blocked.
+
+4. **What challenges did you face while extracting structured data from HTML files?**
+   - The main challenge is inconsistent HTML structure across job postings. Some fields may be missing or formatted differently. We use BeautifulSoup and regular expressions in our extraction script to handle these variations, but some manual adjustments are sometimes needed.
+
+5. **How do you handle missing or inconsistent data in your extraction process?**
+   - If a field is missing in a job posting, our script assigns a default value (like an empty string or “N/A”). We also clean the data in Power BI, where we can filter out or highlight incomplete records.
+
+6. **Can your script be easily adapted to scrape other job roles or websites? How?**
+   - Yes. To scrape other roles, we just change the search keywords in the script. For other websites, we would need to update the selectors and possibly the login process, but the overall structure of the script would remain similar.
+
+7. **What are the main fields you extract from each job posting, and why are they important?**
+   - We extract job title, company, location, required skills, qualifications, experience, and industry domain. These fields help us analyze demand, skill requirements, and trends in the job market.
+
+8. **How do you ensure the accuracy and reliability of your extracted data?**
+   - We validate the extraction by manually checking a sample of the output. In Power BI, we also look for outliers or missing values, which can indicate extraction errors.
+
+9. **What libraries did you use for HTML parsing and why?**
+   - We use BeautifulSoup for HTML parsing because it is easy to use, efficient, and well-suited for extracting data from complex HTML structures.
+
+10. **How do you automate the process for multiple job roles?**
+    - We run the script multiple times with different search keywords and output directories. Each run saves HTML files and extracted CSVs for a specific role, which we later combine for analysis.
+
+11. **How did you clean and preprocess the data before importing it into Power BI?**
+    - We remove duplicates, handle missing values, and standardize field formats in Power BI after importing the CSVs. This ensures the data is ready for visualization.
+
+12. **What types of visualizations did you create in Power BI, and what insights do they provide?**
+    - We created bar charts for job counts by role and location, pie charts for skill distribution, and line charts for trends over time. These visualizations help us identify in-demand skills, top hiring locations, and overall job market trends.

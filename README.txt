@@ -1,3 +1,81 @@
+# Job Market Trend Analysis for IT Roles
+
+## Project Overview
+This project analyzes job market trends for various IT roles in India using web scraping and Power BI. It automates the collection of job postings from LinkedIn, extracts and structures the data, and visualizes trends for actionable insights.
+
+---
+
+## 1. Workflow
+
+### a. Data Collection (Python + Playwright) (Piyush Kumar)
+- Automated login to LinkedIn
+- Search for specific job roles (e.g., Blockchain Developer, Data Scientist, etc.)
+- Scrape job postings and save each as an HTML file
+
+### b. Data Extraction & Structuring (Parveen Kumar)
+- Parse saved HTML files
+- Extract structured data (job title, company, location, etc.)
+- Save structured data into CSV files
+
+### c. Data Cleaning & Visualization (Power BI) (Piyush Kumar, Pawan Kumar, Pankaj Kumar)
+- Import CSVs into Power BI
+- Clean data (remove duplicates, handle missing values)
+- Create dashboards to visualize trends (job counts, locations, skills, etc.)
+
+---
+
+## 2. Demo Script
+
+**Introduction:**
+“Hello everyone, today I’ll demonstrate our project on analyzing job market trends for IT roles using web scraping and Power BI.”
+
+**Step 1: Data Collection (Python Script)** (Piyush Kumar)
+- Show the Python script (`MAIN.PY`)
+- Run the script or show a recorded run
+- Explain how job details are saved as HTML files
+
+**Step 2: Data Extraction & Structuring** (Parveen Kumar)
+- Show a sample CSV file
+- Explain the extracted data fields
+
+**Step 3: Data Cleaning & Visualization (Power BI)** (Piyush Kumar, Pawan Kumar, Pankaj Kumar)
+- Import CSV into Power BI
+- Show cleaning steps and dashboards
+
+**Results & Insights** (Pankaj Kumar)
+- Highlight key findings from the dashboard
+
+**Conclusion**
+- Summarize the workflow and its value
+
+---
+
+8. Challenges & Solutions
+
+
+## 5. Future Work
+- Automate extraction for more roles and locations
+- Enhance data extraction for deeper analytics
+- Deploy as a scheduled service for continuous monitoring
+
+---
+
+10. Conclusion & Q/A
+
+---
+
+## 4. Live Demo Checklist
+
+- [ ] Open `MAIN.PY` in the editor
+- [ ] Show and explain the code
+- [ ] Run the script or show output folder
+- [ ] Show a sample CSV file
+- [ ] Open Power BI and import CSV
+- [ ] Show dashboards and insights
+- [ ] Be ready for Q&A
+
+---
+
 HTML_DIR = r'C:\Users\Parveen kumar\Downloads\Backend_Developer-20250701T161924Z-1-001\Backend_Developer'
 OUTPUT_CSV = 'extracted_jobs2.csv'
 
