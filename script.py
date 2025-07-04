@@ -33,11 +33,6 @@ def extract_from_html(filepath):
         soup = BeautifulSoup(f, 'html.parser')
         text = soup.get_text(separator=' ', strip=True)
 
-def extract_from_html(filepath):
-    with open(filepath, encoding='utf-8') as f:
-        soup = BeautifulSoup(f, 'html.parser')
-        text = soup.get_text(separator=' ', strip=True)
-
     # job_id: extract from <a data-control-id ... href="/jobs/view/NUMBER/...
     job_id = None
     a_tag = soup.find('a', attrs={'data-control-id': True}, href=re.compile(r'/jobs/view/\d+/'))
@@ -48,8 +43,6 @@ def extract_from_html(filepath):
     if not job_id:
         # fallback: use filename (without extension)
         job_id = os.path.splitext(os.path.basename(filepath))[0]
-
-    # ...existing code for other fields...
 
     # job_title
     job_title = None
