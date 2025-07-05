@@ -73,3 +73,39 @@
 
 12. **What types of visualizations did you create in Power BI, and what insights do they provide?**
     - We created bar charts for job counts by role and location, pie charts for skill distribution, and line charts for trends over time. These visualizations help us identify in-demand skills, top hiring locations, and overall job market trends.
+
+13. **How do you handle duplicate job postings in your dataset?**
+    - We use Power BI's built-in tools to remove duplicate job postings by checking for unique job IDs or a combination of job title, company, and location. This ensures that each job is only counted once in our analysis.
+
+14. **What trends did you observe in the job market for different IT roles?**
+    - We observed that roles like Data Scientist, Full Stack Developer, and Cloud Engineer are in high demand. There is also a noticeable increase in remote job postings and a growing emphasis on skills like Python, Machine Learning, and cloud technologies.
+
+15. **How would you update your dashboards if new data is collected?**
+    - We would rerun our extraction and cleaning scripts to generate updated CSV files, then refresh the data source in Power BI. The dashboards are designed to update automatically when new data is loaded.
+
+16. **What are the ethical considerations of web scraping from platforms like LinkedIn?**
+    - Ethical considerations include respecting the website’s terms of service, not overloading servers, and ensuring that scraped data is used responsibly and not for spamming or unauthorized redistribution. We also avoid collecting personal or sensitive information.
+
+17. **How scalable is your solution for larger datasets or more frequent data collection?**
+    - Our solution can be scaled by running the script on more powerful hardware or in the cloud. For frequent data collection, we can schedule the script to run at regular intervals and use parallel processing to speed up extraction.
+
+18. **What improvements would you make if you had more time or resources?**
+    - We would automate the entire pipeline, add more robust error handling, use proxies and user-agent rotation for better anti-bot evasion, and expand the analysis to more job roles and regions. We would also consider using a database instead of CSV files for better scalability.
+
+19. **How can this project be useful for job seekers or recruiters?**
+    - Job seekers can use the insights to identify in-demand skills and locations, while recruiters can spot hiring trends and skill gaps. The dashboards provide a clear overview of the job market, helping both groups make informed decisions.
+
+20. **What are the limitations of your current approach?**
+    - Limitations include possible missing or inaccurate data due to changes in website structure, anti-bot measures, and the static nature of CSV files. The script may also miss jobs that require more complex navigation or authentication.
+
+21. **How did you divide the work among team members?**
+    - We divided the work based on individual strengths: one member focused on web scraping, another on data cleaning and analysis, and another on Power BI visualization and documentation. We collaborated on testing and troubleshooting.
+
+22. **What was the most challenging part of the project for your team?**
+    - The most challenging part was handling dynamic web content and anti-bot measures on LinkedIn. Ensuring data consistency and dealing with missing fields also required extra effort.
+
+23. **How did you test and validate your scripts and dashboards?**
+    - We tested the scripts on multiple job roles and manually checked the extracted data for accuracy. In Power BI, we validated the dashboards by comparing results with known job postings and checking for anomalies.
+
+24. **How would you document this project for someone else to use or extend?**
+    - We would provide a detailed README with setup instructions, code comments, and sample configuration files. We would also include usage examples, troubleshooting tips, and guidelines for adapting the scripts to other roles or websites.
